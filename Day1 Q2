@@ -1,0 +1,12 @@
+
+SELECT * FROM Sales;
+SELECT sale_id, sale_date FROM Sales;
+SELECT * FROM Sales WHERE total_price > 100.00;
+SELECT sale_id, total_price FROM Sales WHERE sale_date = '2024-01-03';
+SELECT SUM(total_price) AS total_revenue FROM Sales;
+SELECT SUM(quantity_sold) AS total_quantity_sold FROM Sales;
+SELECT sale_id, product_id, total_priceFROM Sales WHERE quantity_sold > 4;
+SELECT AVG(total_price) AS average_total_price FROM Sales;
+
+
+
